@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainbox{
+    background-image: url('camera.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.button1 span{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    left: 16px;
+    /* bottom: 320px; */
+    /* or we can instead of bottom */
+    line-height: 50px;
+   
+}
+
+.sidebarmenu{
+    position: fixed;
+    /* right: 800px; */
+    /* or we can do */
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #f3f3f32e;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);   
+    transition: all 0.3s ease-in 0s; 
+}
+
+.sidebarmenu .logo{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    line-height: 40px;
+    box-shadow: 0 2px 4px rgba(255, 247, 247, 0.896);
+}
+.sidebarmenu .logo a{
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.sidebarmenu .menu{
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 80px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.sidebarmenu .button2{
+    position: absolute;
+    left: 260px;
+    line-height:30px;
+    /* color: white;  */
+    color: grey;
+    opacity: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sidebarmenu .menu li{
+    margin-top: 6px;
+    padding: 12px 20px;
+}
+
+.sidebarmenu .menu span,i,a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebarmenu .menu span{
+    font-size: 30px;
+    padding-right: 7px;
+}
+
+#exhibits{
+    font-size: 30px;
+    padding-right: 7px;
+}
+.sidebarmenu .menu a{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.sidebarmenu .socialmediapanel{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+}
+.sidebarmenu .socialmediapanel i{
+    padding-right: 5px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebarmenu .menu li:hover{
+     box-shadow: 0 0 4px rgba(255, 255, 255,0.5);
+}
+.sidebarmenu .button2 span{
+    cursor: pointer;
+}
+
+.sidebarmenu .socialmediapanel i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.button1:hover{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#check:checked ~ .sidebarmenu{
+    left: 0px;
+}
+
+#check:checked ~ .button1{
+    opacity: 0;
+}
+#check:checked ~ .sidebarmenu .button2{
+    opacity: 1;
+}
+.button1 span:hover{
+   font-size: 60px;
+   transition: all 0.2s ease-in-out;
+   /* transform: scale(2); */
+}
+
+.sidebarmenu .button2 :hover{
+    font-size: 30px;
+    transition: all 0.1s ease-in ;
+}
